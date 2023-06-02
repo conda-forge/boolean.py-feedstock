@@ -1,11 +1,11 @@
-About boolean.py
-================
+About boolean.py-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/boolean.py-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/bastikr/boolean.py
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/boolean.py-feedstock/blob/main/LICENSE.txt)
 
 Summary: Define boolean algebras, create and parse boolean expressions and create custom boolean DSL.
 
