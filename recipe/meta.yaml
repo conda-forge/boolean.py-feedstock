@@ -1,5 +1,5 @@
-{% set version = "3.7" %}
-{% set sha256 = "bd19b412435611ecc712603d0fd7d0e280e24698e7a6e3d5f610473870c5dd1e" %}
+{% set version = "4.0" %}
+{% set sha256 = "17b9a181630e43dde1851d42bef546d616d5d9b4480357514597e78b203d06e4" %}
 
 package:
   name: boolean.py
@@ -12,14 +12,14 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -30,11 +30,11 @@ about:
   license: BSD-2-Clause
   license_file: LICENSE.txt
   summary: >
-    Define boolean algebras, create and parse boolean expressions and create custom
-    boolean DSL.
+    Define boolean algebras, create and parse boolean expressions and create custom boolean DSL.
   doc_url: https://booleanpy.readthedocs.io/
   dev_url: https://github.com/bastikr/boolean.py
 
 extra:
   recipe-maintainers:
     - mbargull
+    - pkgw
