@@ -149,4 +149,5 @@ Feedstock Maintainers
 =====================
 
 * [@mbargull](https://github.com/mbargull/)
+* [@pkgw](https://github.com/pkgw/)
 
