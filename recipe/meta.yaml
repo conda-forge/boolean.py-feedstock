@@ -1,16 +1,16 @@
-{% set version = "4.0" %}
-{% set sha256 = "17b9a181630e43dde1851d42bef546d616d5d9b4480357514597e78b203d06e4" %}
+{% set version = "5.0" %}
+{% set sha256 = "60cbc4bad079753721d32649545505362c754e121570ada4658b852a3a318d95" %}
 
 package:
   name: boolean.py
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/b/boolean.py/boolean.py-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/b/boolean.py/boolean_py-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
